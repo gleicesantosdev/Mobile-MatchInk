@@ -1,9 +1,15 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
-export default function App() {
+const UserProfile = () => {
+  const navigation = useNavigation();
+
+  const navigateToCadastroPro = () => {
+    navigation.navigate('CadastroPro');
+  };
+
   return (
-    
     <View style={styles.container}>
       <Text style={styles.title}>Inscreva-se</Text>
       <Text style={styles.subtitle}>Desfrute dos benefícios do MatchInk</Text>
@@ -11,9 +17,9 @@ export default function App() {
       <TextInput style={styles.input} placeholder="Email" />
       <TextInput style={styles.input} placeholder="Senha" secureTextEntry={true} />
 
-      <View style={styles.radioContainer}>
-        <Text>Profissional</Text>
-      </View>
+      <TouchableOpacity style={styles.button} onPress={navigateToCadastroPro}>
+        <Text style={styles.buttonText}>Ir para o CadastroPro</Text>
+      </TouchableOpacity>
 
       <TouchableOpacity style={styles.button} onPress={() => alert('Enviado')}>
         <Text style={styles.buttonText}>Registrar</Text>
@@ -27,8 +33,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 0,
-    margin: 0,
+    padding: 20,
   },
   title: {
     fontSize: 30,
@@ -50,19 +55,14 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
     color: 'white',
     width: '85%',
-    marginTop: '5%', 
-  },
-  radioContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginBottom: 16,
+    marginTop: '5%',
   },
   button: {
     backgroundColor: 'black',
-    padding: '5%',
+    padding: 15,
     width: '85%',
     borderRadius: 5,
-    marginBottom: '10%',
+    marginBottom: 10,
   },
   buttonText: {
     fontSize: 18,
@@ -71,3 +71,5 @@ const styles = StyleSheet.create({
     color: 'white',
   },
 });
+
+export default UserProfile;
