@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image, ImageBackground} from 'react-native';
 
-const ImageBackground = './assets/'
+//const ImageBackground = './assets/'
 
-export default function App() {
+export default function Home() {
   return (
     <View style={styles.container}>
-      <Image source={require('../MatchInk-Production/img/Tela1/logoVermelha.png')} style={styles.logo} />
+      <Image source={require('../../assets/Tela1/logoPreta.png')} style={styles.logo} />
       <Text style={styles.text1}>Encontramos alguns estúdios e profissionais na sua área.</Text>
       <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText}>Criar conta</Text>
@@ -15,8 +15,8 @@ export default function App() {
       <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText}>Entrar</Text>
       </TouchableOpacity>
-      <Image source={require('google.svg')} style={styles.logoGoogle} />
-      <Image source={require('../MatchInk-Production/img/Tela1/Facebook.svg')} style={styles.logoFacebook} />
+      <Image source={require('../../assets/Tela1/Google.svg')} style={styles.logoGoogle} />
+      <Image source={require('../../assets/Tela1/Facebook.svg')} style={styles.logoFacebook} />
     </View>
   );
 }
