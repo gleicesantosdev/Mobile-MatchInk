@@ -3,6 +3,8 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-nativ
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import Home from './src/pages/home';
+import Cadastro from './src/pages/cadastro';
+import Login from './src/pages/login';
 
 const Stack = createStackNavigator(); 
 
@@ -11,6 +13,8 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={Home} options={{headerShown: false}}></Stack.Screen>
+        <Stack.Screen name="Cadastro" component={Cadastro}></Stack.Screen>
+        <Stack.Screen name="Login" component={Login}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   )

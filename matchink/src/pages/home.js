@@ -3,16 +3,16 @@ import { View, Text, TouchableOpacity, StyleSheet, Image, ImageBackground} from 
 
 //const ImageBackground = './assets/'
 
-export default function Home() {
+export default function Home({ navigation }) {
   return (
     <View style={styles.container}>
       <Image source={require('../../assets/Tela1/logoPreta.png')} style={styles.logo} />
       <Text style={styles.text1}>Encontramos alguns estúdios e profissionais na sua área.</Text>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Cadastro')}>
         <Text style={styles.buttonText}>Criar conta</Text>
       </TouchableOpacity>
       <Text style={styles.text2}>Já tem uma conta?</Text>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Login')}>
         <Text style={styles.buttonText}>Entrar</Text>
       </TouchableOpacity>
       <Image source={require('../../assets/Tela1/Google.svg')} style={styles.logoGoogle} />
