@@ -1,7 +1,21 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
+import Home from './src/pages/home';
+
+const Stack = createStackNavigator(); 
 
 export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={Home} options={{headerShown: false}}></Stack.Screen>
+      </Stack.Navigator>
+    </NavigationContainer>
+  )
+
+  /*
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Inscreva-se</Text>
@@ -19,6 +33,7 @@ export default function App() {
       </TouchableOpacity>
     </View>
   );
+  */
 }
 
 const styles = StyleSheet.create({
