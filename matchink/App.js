@@ -18,26 +18,6 @@ export default function App() {
       </Stack.Navigator>
     </NavigationContainer>
   )
-
-  /*
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Inscreva-se</Text>
-      <Text style={styles.subtitle}>Desfrute dos benefícios do MatchInk</Text>
-
-      <TextInput style={styles.input} placeholder="Email" />
-      <TextInput style={styles.input} placeholder="Senha" secureTextEntry={true} />
-
-      <View style={styles.radioContainer}>
-        <Text>Profissional</Text>
-      </View>
-
-      <TouchableOpacity style={styles.button} onPress={() => alert('Enviado')}>
-        <Text style={styles.buttonText}>Registrar</Text>
-      </TouchableOpacity>
-    </View>
-  );
-  */
 }
 
 const styles = StyleSheet.create({
