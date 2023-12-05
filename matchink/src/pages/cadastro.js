@@ -3,6 +3,7 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-nativ
 
 export default function App() {
   return (
+    
     <View style={styles.container}>
       <Text style={styles.title}>Inscreva-se</Text>
       <Text style={styles.subtitle}>Desfrute dos benefícios do MatchInk</Text>
@@ -11,12 +12,11 @@ export default function App() {
       <TextInput style={styles.input} placeholder="Senha" secureTextEntry={true} />
 
       <View style={styles.radioContainer}>
-        <Text>Cliente</Text> 
         <Text>Profissional</Text>
       </View>
 
       <TouchableOpacity style={styles.button} onPress={() => alert('Enviado')}>
-        <Text style={styles.buttonText}>Cadastrar</Text>
+        <Text style={styles.buttonText}>Registrar</Text>
       </TouchableOpacity>
     </View>
   );

@@ -4,18 +4,18 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-nativ
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Inscreva-se</Text>
-      <Text style={styles.subtitle}>Desfrute dos benefícios do MatchInk</Text>
+      <Text style={styles.title}>BEM-VINDO DE VOLTA</Text>
+      <Text style={styles.subtitle}>Por favor, faça login para continuar</Text>
 
-      <TextInput style={styles.input} placeholder="Email" />
+      <TextInput style={styles.input} placeholder="Endereço de email" />
       <TextInput style={styles.input} placeholder="Senha" secureTextEntry={true} />
 
-      <View style={styles.radioContainer}>
-        <Text>Profissional</Text>
+      <View style={styles.checkboxContainer}>
+        <Text>Continuar conectado?</Text>
       </View>
 
       <TouchableOpacity style={styles.button} onPress={() => alert('Enviado')}>
-        <Text style={styles.buttonText}>Registrar</Text>
+        <Text style={styles.buttonText}>Log in</Text>
       </TouchableOpacity>
     </View>
   );
@@ -30,12 +30,12 @@ const styles = StyleSheet.create({
     margin: 0,
   },
   title: {
-    fontSize: 30,
+    fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 8,
   },
   subtitle: {
-    fontSize: 18,
+    fontSize: 16,
     marginBottom: 16,
   },
   input: {
@@ -49,9 +49,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
     color: 'white',
     width: '85%',
-    marginTop: '5%', 
+    marginTop: '5%',
   },
-  radioContainer: {
+  checkboxContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginBottom: 16,
