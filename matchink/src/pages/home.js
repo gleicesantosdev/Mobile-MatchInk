@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Image, ImageBackground} from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Image} from 'react-native';
 
-//const ImageBackground = './assets/'
+
 
 export default function Home({ navigation }) {
   return (
@@ -20,7 +20,10 @@ export default function Home({ navigation }) {
         <Text style={styles.buttonText}>Entrar</Text>
       </TouchableOpacity>
 
+      <Image source={require('google.svg')} style={styles.logoGoogle} />
+
       <Image source={require('../../assets/Tela1/Google.svg')} style={styles.logoGoogle} />
+
       <Image source={require('../../assets/Tela1/Facebook.svg')} style={styles.logoFacebook} />
     </View>
   );

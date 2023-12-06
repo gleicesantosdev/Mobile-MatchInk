@@ -6,36 +6,24 @@ const UserProfile = () => {
     <ScrollView style={styles.container}>
       <View style={styles.header}>
         <TouchableOpacity>
-
           <Image source={require('../assets/Tela6/Vector.png')} style={styles.icon} />
         </TouchableOpacity>
         <TouchableOpacity>
           <Image source={require('../assets/Tela6/engrenagemConfig.svg')} style={styles.icon} />
-
-          <Image source={require('../../assets/Tela6/Vector.png')} style={styles.icon} />
         </TouchableOpacity>
         <TouchableOpacity>
-          <Image source={require('../../assets/Tela6/engrenagemConfig.svg')} style={styles.icon} />
-
+          <Image source={require('../assets/Tela6/engrenagemConfig.svg')} style={styles.icon} />
         </TouchableOpacity>
       </View>
 
       <View style={styles.balao}>
         <View style={styles.insta}>
           <TouchableOpacity>
-
             <Image source={require('../assets/Tela6/Instagram.svg')} style={styles.icon} />
           </TouchableOpacity>
         </View>
         <View style={styles.bio}>
           <Image source={require('../assets/Tela6/fotoTatuadora.png')} style={styles.fotoPerfil} />
-
-            <Image source={require('../../assets/Tela6/Instagram.svg')} style={styles.icon} />
-          </TouchableOpacity>
-        </View>
-        <View style={styles.bio}>
-          <Image source={require('../../assets/Tela6/fotoTatuadora.png')} style={styles.fotoPerfil} />
-
           <Text style={styles.nome}>Jennifer L.</Text>
           <Text style={styles.bioText}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -43,17 +31,13 @@ const UserProfile = () => {
         </View>
         <View style={styles.iconcm}>
           <TouchableOpacity>
-
             <Image source={require('../assets/Tela6/calendarioPreto.svg')} style={styles.icon} />
           </TouchableOpacity>
           <TouchableOpacity>
             <Image source={require('../assets/Tela6/mensagemPreto.svg')} style={styles.icon} />
-
-            <Image source={require('../../assets/Tela6/calendarioPreto.svg')} style={styles.icon} />
           </TouchableOpacity>
           <TouchableOpacity>
-            <Image source={require('../../assets/Tela6/mensagemPreto.svg')} style={styles.icon} />
-
+            <Image source={require('../assets/Tela6/mensagemPreto.svg')} style={styles.icon} />
           </TouchableOpacity>
         </View>
       </View>
@@ -80,24 +64,19 @@ const UserProfile = () => {
       <View style={styles.portfolio}>
         <View style={styles.avaliacao}>
           <View>
-
             <Image source={require('../assets/Tela6/likePreto.svg')} style={styles.icon} />
             <Text>777</Text>
           </View>
           <View>
             <Image source={require('../assets/Tela6/visuPreto.svg')} style={styles.icon} />
-
-            <Image source={require('../../assets/Tela6/likePreto.svg')} style={styles.icon} />
             <Text>777</Text>
           </View>
           <View>
-            <Image source={require('../../assets/Tela6/visuPreto.svg')} style={styles.icon} />
-
+            <Image source={require('../assets/Tela6/visuPreto.svg')} style={styles.icon} />
             <Text>2408</Text>
           </View>
         </View>
         <View style={styles.fotosPortfolio}>
-
           <Image source={require('../assets/Tela6/fotoPortfolio1.png')} style={styles.fotoPortfolio} />
           <Image source={require('../assets/Tela6/fotoPortfolio2.png')} style={styles.fotoPortfolio} />
           <Image source={require('../assets/Tela6/fotoPortfolio3.png')} style={styles.fotoPortfolio} />
@@ -106,31 +85,15 @@ const UserProfile = () => {
         <View style={styles.adicionar}>
           <TouchableOpacity>
             <Image source={require('../assets/Tela6/Add.png')} style={styles.icon} />
-
-          <Image source={require('../../assets/Tela6/fotoPortfolio1.png')} style={styles.fotoPortfolio} />
-          <Image source={require('./../assets/Tela6/fotoPortfolio2.png')} style={styles.fotoPortfolio} />
-          <Image source={require('../../assets/Tela6/fotoPortfolio3.png')} style={styles.fotoPortfolio} />
-          <Image source={require('../../assets/Tela6/fotoPortfolio4.png')} style={styles.fotoPortfolio} />
-        </View>
-        <View style={styles.adicionar}>
-          <TouchableOpacity>
-            <Image source={require('../../assets/Tela6/Add.png')} style={styles.icon} />
-
           </TouchableOpacity>
         </View>
       </View>
 
       <View style={styles.barraBaixo}>
         <View style={styles.botoes}>
-
-          <Image source={require('../assets/barra de baixo/account.svg')} style={styles.icon} />
-          <Image source={require('../assets/barra de baixo/home.svg')} style={styles.icon} />
-          <Image source={require('../assets/barra de baixo/favorite.svg')} style={styles.icon} />
-
-          <Image source={require('../../assets/barra-de-baixo/account.svg')} style={styles.icon} />
-          <Image source={require('../../assets/barra-de-baixo/home.svg')} style={styles.icon} />
-          <Image source={require('../../assets/barra-de-baixo/favorite.svg')} style={styles.icon} />
-
+          <Image source={require('../assets/barra-de-baixo/account.svg')} style={styles.icon} />
+          <Image source={require('../assets/barra-de-baixo/home.svg')} style={styles.icon} />
+          <Image source={require('../assets/barra-de-baixo/favorite.svg')} style={styles.icon} />
         </View>
       </View>
     </ScrollView>
@@ -176,6 +139,8 @@ const styles = StyleSheet.create({
     position: 'relative',
     display: 'block',
     marginBottom: 25,
+    bottom: -40,
+    left: 30,
   },
   icon: {
     width: 24,
@@ -202,13 +167,6 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     marginLeft: 15,
     marginTop: -5,
-  },
-  iconcm: {
-    position: 'relative',
-    display: 'block',
-    marginBottom: 25,
-    bottom: -40,
-    left: 30,
   },
   hr: {
     width: '89%',
@@ -246,8 +204,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginRight: -318,
     marginBottom: -40,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.25,
   },
   pontosText: {

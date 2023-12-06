@@ -13,7 +13,6 @@ export const CadastroPro = () => {
 
   const handleCadastro = async () => {
     // Lógica para enviar os dados para a API ou fazer o que for necessário
-    // Normalmente, você faria uma requisição HTTP aqui para enviar os dados para o servidor
     let novoUsuario = {
       nome: nome,
       email: email,

@@ -10,6 +10,7 @@ export default function Cadastro({ navigation }) {
       <TextInput style={styles.input} placeholder="Email" />
       <TextInput style={styles.input} placeholder="Senha" secureTextEntry={true} />
 
+
       <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('CadastroProfissional')}>
         <Text style={styles.buttonText}>Ir para o CadastroPro</Text>
       </TouchableOpacity>
@@ -48,7 +49,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
     color: 'white',
     width: '85%',
-    marginTop: '5%',
+    marginTop: 5, // Removido as aspas, já que marginTop espera um número
   },
   button: {
     backgroundColor: 'black',
