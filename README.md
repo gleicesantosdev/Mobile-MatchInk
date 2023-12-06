@@ -17,7 +17,7 @@ O MatchInk é uma plataforma digital inovadora, projetada especificamente para f
 - Github
 - Visual Studio Code
 - Canva 
-- Figma ( https://www.figma.com/file/bgiMto2wkytHjOajpb9oa3/Tatuagem-SENAC?node-id=201-3137&t=F9hFYsJ5PmTEDbFv-0 ) 
+- <p hrfe="https://www.figma.com/file/bgiMto2wkytHjOajpb9oa3/Tatuagem-SENAC?node-id=201-3137&t=F9hFYsJ5PmTEDbFv-0"> Figma </p> 
 
 
 ## Membros da Equipe
