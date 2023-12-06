@@ -1,21 +1,33 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image, ImageBackground} from 'react-native';
 
+
 const ImageBackground = '../../assets/Backgroud.jpeg'
 
-export default function App() {
+//const ImageBackground = './assets/'
+
+
+export default function Home({ navigation }) {
   return (
     <View style={styles.container}>
+
       <Image source={require('../../assets/Tela1/logoVermelha.png')} style={styles.logo} />
+
+      <Image source={require('../../assets/Tela1/logoPreta.png')} style={styles.logo} />
+
       <Text style={styles.text1}>Encontramos alguns estúdios e profissionais na sua área.</Text>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Cadastro')}>
         <Text style={styles.buttonText}>Criar conta</Text>
       </TouchableOpacity>
       <Text style={styles.text2}>Já tem uma conta?</Text>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Login')}>
         <Text style={styles.buttonText}>Entrar</Text>
       </TouchableOpacity>
+
       <Image source={require('google.svg')} style={styles.logoGoogle} />
+
+      <Image source={require('../../assets/Tela1/Google.svg')} style={styles.logoGoogle} />
+
       <Image source={require('../../assets/Tela1/Facebook.svg')} style={styles.logoFacebook} />
     </View>
   );
