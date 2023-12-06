@@ -1,8 +1,6 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Image, ImageBackground} from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Image} from 'react-native';
 
-
-const ImageBackground = '../../assets/Backgroud.jpeg'
 
 //const ImageBackground = './assets/'
 
