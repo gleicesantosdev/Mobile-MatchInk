@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import Home from './src/pages/home';
 import Cadastro from './src/pages/cadastro';
 import Login from './src/pages/login';
+import CadastroPro from './src/pages/CadastroPro';
 
 const Stack = createStackNavigator(); 
 
@@ -14,6 +15,7 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen name="Home" component={Home} options={{headerShown: false}}></Stack.Screen>
         <Stack.Screen name="Cadastro" component={Cadastro}></Stack.Screen>
+        <Stack.Screen name="CadastroProfissional" component={CadastroPro} options={{headerShown: false}}></Stack.Screen>
         <Stack.Screen name="Login" component={Login}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>

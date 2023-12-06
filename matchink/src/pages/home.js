@@ -2,8 +2,6 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image} from 'react-native';
 
 
-//const ImageBackground = './assets/'
-
 
 export default function Home({ navigation }) {
   return (

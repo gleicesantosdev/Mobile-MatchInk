@@ -1,14 +1,7 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
 
-export default function Cadastro() {
-  const navigation = useNavigation();
-
-  const navigateToCadastroPro = () => {
-    navigation.navigate('CadastroPro');
-  };
-
+export default function Cadastro({ navigation }) {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Inscreva-se</Text>
@@ -17,8 +10,9 @@ export default function Cadastro() {
       <TextInput style={styles.input} placeholder="Email" />
       <TextInput style={styles.input} placeholder="Senha" secureTextEntry={true} />
 
-      <TouchableOpacity style={styles.button} onPress={navigateToCadastroPro}>
-        <Text style={styles.buttonText}>Sou um tatuador</Text>
+
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('CadastroProfissional')}>
+        <Text style={styles.buttonText}>Ir para o CadastroPro</Text>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.button} onPress={() => alert('Enviado')}>
@@ -71,4 +65,3 @@ const styles = StyleSheet.create({
     color: 'white',
   },
 });
-
