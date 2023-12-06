@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 
-export default function App() {
+export default function Login() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>BEM-VINDO DE VOLTA</Text>

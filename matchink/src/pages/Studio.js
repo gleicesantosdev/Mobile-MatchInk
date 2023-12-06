@@ -3,14 +3,14 @@ import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'rea
 import { useNavigation } from '@react-navigation/native';
 
 // Constantes para referências de imagens
-const studioImage = require('../Mobile-Matchink/matchink/assets/Tela5/fotoEstudio.png');
-const instagramIcon = require('../Mobile-Matchink/matchink/assets/Tela5/instagramVermelho.svg');
-const saveIcon = require('../Mobile-Matchink/matchink/assets/Tela5/Salvar.svg');
-const calendarIcon = require('../Mobile-Matchink/matchink/assets/Tela5/calendarioVermelho.svg');
-const mapPinIcon = require('../Mobile-Matchink/matchink/assets/Tela5/mapaPinVermelho.svg');
-const accountIcon = require('../Mobile-Matchink/matchink/assets/barra de baixo/account.svg');
-const homeIcon = require('../Mobile-Matchink/matchink/assets/barra de baixo/home.svg');
-const favoriteIcon = require('../Mobile-Matchink/matchink/assets/barra de baixo/favorite.svg');
+const studioImage = require('../../assets/Tela5/fotoEstudio.png');
+const instagramIcon = require('../../assets/Tela5/instagramVermelho.svg');
+const saveIcon = require('../../assets/Tela5/Salvar.svg');
+const calendarIcon = require('../../assets/Tela5/calendarioVermelho.svg');
+const mapPinIcon = require('../../assets/Tela5/mapaPinVermelho.svg');
+const accountIcon = require('../../assets/barra de baixo/account.svg');
+const homeIcon = require('../../assets/barra de baixo/home.svg');
+const favoriteIcon = require('../../assets/barra de baixo/favorite.svg');
 
 const ResidenteItem = ({ nome, imagemSource }) => {
     const navigation = useNavigation();
@@ -90,30 +90,30 @@ const StudioScreen = () => {
         <View id="residentes">
           <Text style={styles.sectionTitle}>Residentes</Text>
           <View style={styles.residentesContainer}>
-            <ResidenteItem nome="Samuel R." imagemSource={require('../Mobile-Matchink/matchink/assets/Tela5/tattooResidente1.png')} />
+            <ResidenteItem nome="Samuel R." imagemSource={require('../../assets/Tela5/tattooResidente1.png')} />
           </View>
           <Text style={styles.sectionTitle}>Residentes</Text>
           <View style={styles.residentesContainer}>
-            <ResidenteItem nome="Ana M." imagemSource={require('../Mobile-Matchink/matchink/assets/Tela5/tattooResidente2.png')} />
+            <ResidenteItem nome="Ana M." imagemSource={require('../../assets/Tela5/tattooResidente2.png')} />
           </View>
           <Text style={styles.sectionTitle}>Residentes</Text>
           <View style={styles.residentesContainer}>
-            <ResidenteItem nome="Rodrigo C." imagemSource={require('../Mobile-Matchink/matchink/assets/Tela5/tattooResidente3.png')} />
+            <ResidenteItem nome="Rodrigo C." imagemSource={require('../../assets/Tela5/tattooResidente3.png')} />
           </View>
           <Text style={styles.sectionTitle}>Residentes</Text>
           <View style={styles.residentesContainer}>
-            <ResidenteItem nome="Jenifer L." imagemSource={require('../Mobile-Matchink/matchink/assets/Tela5/tattooResidente4.png')} />
+            <ResidenteItem nome="Jenifer L." imagemSource={require('../../assets/Tela5/tattooResidente4.png')} />
           </View>
         </View>
         
         <View id="convidados">
           <Text style={styles.sectionTitle}>Convidados</Text>
           <View style={styles.residentesContainer}>
-            <ResidenteItem nome="João F." imagemSource={require('../Mobile-Matchink/matchink/assets/Tela5/tattooConvidado1.png')} />
+            <ResidenteItem nome="João F." imagemSource={require('../../assets/Tela5/tattooConvidado1.png')} />
           </View>
           <Text style={styles.sectionTitle}>Convidados</Text>
           <View style={styles.residentesContainer}>
-            <ResidenteItem nome="Lucas T." imagemSource={require('../Mobile-Matchink/matchink/assets/Tela5/tattooConvidado2.png')} />
+            <ResidenteItem nome="Lucas T." imagemSource={require('../../assets/Tela5/tattooConvidado2.png')} />
           </View>
         </View>
 
