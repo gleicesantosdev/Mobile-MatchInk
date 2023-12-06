@@ -8,8 +8,10 @@ O MatchInk é uma plataforma digital inovadora, projetada especificamente para f
 
 ## Ferramentas e Tecnologias Utilizadas
 
+- Java
 - JavaScript
 - React Native
+- MongoDB
 - Node.js
 - Git 
 - Github
