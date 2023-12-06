@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Modal } from 'react-native';
 import { RNCamera } from 'react-native-camera';
 
-const CadastroPro = () => {
+export const CadastroPro = () => {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [isTatuador, setIsTatuador] = useState(false);
@@ -11,17 +11,26 @@ const CadastroPro = () => {
   const [biografia, setBiografia] = useState('');
   const [cameraModalOpened, setCameraModalOpened] = useState(false);
 
-  const handleCadastro = () => {
+  const handleCadastro = async () => {
     // Lógica para enviar os dados para a API ou fazer o que for necessário
     // Normalmente, você faria uma requisição HTTP aqui para enviar os dados para o servidor
-    console.log({
-      nome,
-      email,
-      isTatuador,
-      instagram,
-      fotoPerfil,
-      biografia,
-    });
+    let novoUsuario = {
+      nome: nome,
+      email: email,
+      tatuador: isTatuador,
+    }
+
+    try {
+      await fetch('https://matchink-api.onrender.com/usuarios', {
+        method: 'POST',
+        headers: {
+          'Content-Type': "application/json"
+        },
+        body: JSON.stringify(novoUsuario),
+      })
+    } catch (e) {
+      console.log(e)
+    }
   };
 
   const handleCameraModalOpen = () => {
