@@ -104,8 +104,12 @@ const CadastroPro = () => {
           type={RNCamera.Constants.Type.back}
           autoFocus={RNCamera.Constants.AutoFocus.on}
           flashMode={RNCamera.Constants.FlashMode.off}
-          permissionDialogTitle="Permissão para uso da câmera"
-          permissionDialogMessage="Precisamos da permissão de uso da câmera para concluir"
+          androidCameraPermissionOptions={{
+            title: 'Permissão para uso da câmera',
+            message: 'Precisamos da permissão de uso da câmera para concluir',
+            buttonPositive: 'Permitir',
+            buttonNegative: 'Cancelar',
+          }}
         />
         <TouchableOpacity style={styles.button} onPress={takePicture}>
           <Text style={styles.buttonText}>Capturar Foto</Text>
